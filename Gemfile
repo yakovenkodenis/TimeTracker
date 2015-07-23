@@ -10,6 +10,9 @@ gem 'jquery-rails'
 gem 'sprockets-rails', '>= 2.1.4'
 gem 'bootstrap-sass', '~> 3.3.5'
 
+# Heroku gem
+gem 'rails_12factor'
+
 group :development, :test do
   gem 'guard'
   gem 'guard-livereload'
