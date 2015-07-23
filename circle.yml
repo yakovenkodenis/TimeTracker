@@ -2,7 +2,7 @@
 machine:
 
   timezone:
-    Ukraine/Kyiv # Set the timezone
+    Europe/Kiev # Set the timezone
 
   # Version of ruby to use
   ruby:
