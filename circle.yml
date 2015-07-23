@@ -28,7 +28,7 @@ checkout:
 ## Customize dependencies
 dependencies:
   pre:
-    - npm install coffeescript # install from a different package manager
+    # - npm install coffeescript # install from a different package manager
     - gem uninstall bundler # use a custom version of bundler
     - gem install bundler --pre
 
