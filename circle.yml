@@ -6,8 +6,7 @@ Ukraine/Kharkiv # Set the timezone
 
 # Version of ruby to use
 ruby:
-version:
-2.1.5
+    version: 2.1.5
 
 # Override /etc/hosts
 hosts:
