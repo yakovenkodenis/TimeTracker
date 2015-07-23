@@ -26,11 +26,11 @@ checkout:
     - git submodule update --init # use submodules
 
 ## Customize dependencies
-dependencies:
-  pre:
-    # - npm install coffeescript # install from a different package manager
-    - gem uninstall bundler # use a custom version of bundler
-    - gem install bundler --pre
+# dependencies:
+#   pre:
+#     - npm install coffeescript # install from a different package manager
+#     - gem uninstall bundler # use a custom version of bundler
+#     - gem install bundler --pre
 
   override:
     - bundle install: # note ':' here
