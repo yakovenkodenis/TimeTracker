@@ -62,9 +62,10 @@ test:
 ## Customize deployment commands
 deployment:
   staging:
+    owner: yakovenkodenis
     branch: master
     heroku:
-      appname: TimeTracker
+      appname: amazing-timetracker
 
 ## Custom notifications
 # notify:
