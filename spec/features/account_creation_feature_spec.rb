@@ -7,7 +7,7 @@ describe 'account creation' do
     click_link 'Create Account'
 
     fill_in 'Name', with: 'Denis'
-    fill_in 'Email', with: 'yakovenko.denis.a@gmail.com'
+    fill_in 'Email', with: 'denis@gmail.com'
     fill_in 'Password', with: 'pw'
     fill_in 'Password confirmation', with: 'pw'
     fill_in 'Subdomain', with: 'test_subdomain'
