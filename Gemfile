@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'sprockets-rails', '>= 2.1.4'
 gem 'bootstrap-sass', '~> 3.3.5'
 
+gem 'devise', '~> 3.5.1'
+
 # Heroku gem
 gem 'rails_12factor'
 
@@ -24,6 +26,7 @@ group :development, :test do
   gem 'shoulda-matchers'
 
   gem 'byebug'
+  gem 'pry'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
