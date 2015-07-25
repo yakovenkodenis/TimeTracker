@@ -11,6 +11,7 @@ gem 'sprockets-rails', '>= 2.1.4'
 gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'devise', '~> 3.5.1'
+gem 'apartment'
 
 # Heroku gem
 gem 'rails_12factor'

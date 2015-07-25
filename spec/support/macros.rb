@@ -1,0 +1,19 @@
+def drop_schemas
+  connection = ActiveRecord::Base.connection.raw_connection
+  schemas = connection.query(%{
+    SELECT string_agg(format('DROP SCHEMA %I CASCADE;', nspname), E'\n')
+    FROM   pg_namespace WHERE nspname != 'public'
+    AND nspname NOT LIKE 'pg_%'
+    AND nspname != 'information_schema';
+  })
+  schemas.each do |query|
+    connection.query(query.values.first)
+  end
+end
+
+def sign_user_in(user, opts = {})
+  visit new_user_session_url(subdomain: opts[:subdomain])
+  fill_in 'Email', with: user.email
+  fill_in 'Password', with: (opts[:password] || user.password)
+  click_button 'Log in'
+end
