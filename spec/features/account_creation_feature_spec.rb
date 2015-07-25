@@ -35,8 +35,8 @@ describe 'account creation' do
     visit root_url(subdomain: false)
     click_link 'Create Account'
 
-    fill_in 'Name', with: 'Ryan'
-    fill_in 'Email', with: 'bolandryanm@gmail.com'
+    fill_in 'Name', with: 'Denis'
+    fill_in 'Email', with: 'denis@gmail.com'
     fill_in 'Password', with: 'pw'
     fill_in 'Password confirmation', with: 'pw'
     fill_in 'Subdomain', with: subdomain

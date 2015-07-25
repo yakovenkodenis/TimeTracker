@@ -17,6 +17,12 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def current_account
+    @current_account ||= Account.find_by(subdomain: request.subdomain)
+  end
+
+  helper_method :current_account
+
   def after_sign_out_path_for(resource_or_scope)
     new_user_session_path
   end

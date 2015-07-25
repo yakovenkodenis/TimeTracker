@@ -9,15 +9,10 @@ class AccountsController < ApplicationController
   def create
     @account = Account.new(account_params)
     if @account.valid?
-      begin
-        Apartment::Tenant.create(@account.subdomain)
-      rescue StandardError => e
-        puts e.message
-      ensure
-        Apartment::Tenant.switch!(@account.subdomain)
-        @account.save
-        redirect_to new_user_session_url(subdomain: @account.subdomain)
-      end
+      Apartment::Tenant.create(@account.subdomain)
+      Apartment::Tenant.switch!(@account.subdomain)
+      @account.save
+      redirect_to new_user_session_url(subdomain: @account.subdomain)
     else
       render action: 'new'
     end
