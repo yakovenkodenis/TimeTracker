@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'sprockets-rails', '>= 2.1.4'
 gem 'bootstrap-sass', '~> 3.3.5'
 
+gem 'simple_form', '~> 3.1.0',
+    github: 'plataformatec/simple_form', branch: 'master'
 gem 'devise', '~> 3.5.1'
 gem 'apartment'
 
