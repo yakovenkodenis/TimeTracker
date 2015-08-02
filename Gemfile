@@ -20,6 +20,8 @@ gem 'apartment'
 gem 'rails_12factor'
 
 group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'rails-erd'
   gem 'guard'
   gem 'guard-livereload'
@@ -32,8 +34,8 @@ group :development, :test do
   gem 'letter_opener'
   gem 'email_spec'
 
+  gem 'web-console', '~> 2.0'
   gem 'byebug'
   gem 'pry'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
 end
